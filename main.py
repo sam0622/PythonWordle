@@ -116,4 +116,4 @@ game.start_game()  # Start the game
 while len(player.guesses) < 6:  # Loop until the player has made 6 guesses
     player.guess()
 
-game.end_game(False)  # End the game
+game.end_game(False)  # End the game with player loss
