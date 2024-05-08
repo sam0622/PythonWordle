@@ -108,10 +108,12 @@ class Player:
         game.check_guess(guess)  # Check if the guess is correct
 
 
-game = Wordle()
-player = Player()
+game = Wordle()  # Create a new instance of the Wordle class
+player = Player()  # Create a new instance of the Player class
 
-game.start_game()
+game.start_game()  # Start the game
 
-while len(player.guesses) < 6:
+while len(player.guesses) < 6:  # Loop until the player has made 6 guesses
     player.guess()
+
+game.end_game(False)  # End the game
