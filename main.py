@@ -97,7 +97,7 @@ class Player:
         """
         while True:
             guess = input("Guess a five letter word: ").upper()
-            if guess.isalpha() and len(guess) == 5:  # Checks if the guess is comprised 100% of letters and is 5 letters long
+            if guess.isalpha() and len(guess) == 5 and guess in word_list.words:  # Checks if the guess is comprised 100% of letters and is 5 letters long
                 break  # If it is, break out of the loop
             elif guess in self.guesses:  # If the guess has already been guessed, print an error message
                 print("You already guessed that word")
